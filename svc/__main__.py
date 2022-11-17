@@ -1,6 +1,3 @@
 import uvicorn
 
-uvicorn.run(
-    'svc.app:app',
-    reload=True
-)
+uvicorn.run('svc.app:app')

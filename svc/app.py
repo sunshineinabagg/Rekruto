@@ -2,6 +2,6 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get('/hellopage')
-def HelloPage(name: str = 'Rekruto', message: str = 'Давай дружить'):
+@app.get('/')
+def HelloPage(name: str, message: str):
     return f'Hello, {name}! {message}!'
